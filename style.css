@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 962px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.todo {
+  color: #007fdb;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.todo-list-card {
+  max-width: 430px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.todo-list-background-img {
+  width: 100%;
+  height: 202px;
+  background: url(./images/flowers.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+}
+.linear {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.175);
+  border-radius: 10px 10px 0px 0px;
+}
+.time {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
+}
+.time p {
+  font-family: "Russo One", sans-serif;
+  text-align: right;
+  font-size: 18px;
+  color: white;
+}
+.time h1 {
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.todo-list {
+  width: 100%;
+  padding: 20px 29px 78px 29px;
+  height: auto;
+  border-radius: 0px 10px 0px 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+form {
+  max-width: 373px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.input-side {
+  max-width: 275px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 10px;
+  border-radius: 5px;
+  background: #ebeff2;
+}
+.check {
+  font-size: 24px;
+  color: #20eeb0;
+}
+.input-side input {
+  max-width: 189px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #18b687;
+}
+.input-side input::placeholder {
+  color: #888;
+  font-family: Inter;
+  font-size: 16px;
+}
+.click {
+  display: flex;
+  width: 88px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #20eeb0;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.click i {
+  color: white;
+  font-size: 18px;
+}
+.click:hover {
+  opacity: 0.5;
+}
+.todo-list-main{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.todo-list-note {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.text-mark img{
+  cursor: pointer;
+}
+.todo-list-note-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.todo-list-note-text h1 {
+  color: #0d0d0d;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.todo-list-note-text p {
+  color: #888;
+  font-family: Inter;
+  font-size: 14px;
+}

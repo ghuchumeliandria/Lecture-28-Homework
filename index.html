@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="todo">Todo</h1>
+      <div class="todo-list-card">
+        <!-- ------------------------------------------------- Background Image --------------------------- -->
+        <div class="todo-list-background-img">
+          <div class="linear"></div>
+          <div class="time">
+            <p>Thur 9</p>
+            <h1>6:23 AM</h1>
+          </div>
+        </div>
+
+        <!-- ---------------------------------------------------------CONTENT------------------------------------------------------------ -->
+
+        <div class="todo-list" id="mainList">
+          <form id="form">
+            <div class="input-side">
+              <i class="fa-solid fa-circle-check check"></i>
+              <input type="text" placeholder="Note" id="input" />
+            </div>
+            <button class="click" id="submitBtn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
