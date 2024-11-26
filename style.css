@@ -18,6 +18,8 @@ main {
   height: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 .todo {
   color: #007fdb;
@@ -30,10 +32,12 @@ main {
 .todo-list-card {
   max-width: 430px;
   width: 100%;
+  height: 636px;
   display: flex;
   flex-direction: column;
 }
 .todo-list-background-img {
+  max-width: 430px;
   width: 100%;
   height: 202px;
   background: url(./images/flowers.jpg);
@@ -73,13 +77,16 @@ main {
 
 .todo-list {
   width: 100%;
+  height: 430px;
   padding: 20px 29px 78px 29px;
-  height: auto;
-  border-radius: 0px 10px 0px 10px;
+  border-radius: 0px 0px 10px 10px;
   background: #fff;
   display: flex;
   flex-direction: column;
   gap: 36px;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #20eeb0 #fff;
 }
 form {
   max-width: 373px;
@@ -101,6 +108,10 @@ form {
 .check {
   font-size: 24px;
   color: #20eeb0;
+}
+.radio-btn{
+  width: 20px;
+  height: 20px;
 }
 .input-side input {
   max-width: 189px;
@@ -170,4 +181,15 @@ form {
   color: #888;
   font-family: Inter;
   font-size: 14px;
+}
+
+.list-line{
+  text-decoration: line-through;
+}
+
+@media(max-width: 700px){
+  main{
+    flex-direction: column;
+    gap: 50px;
+  }
 }
